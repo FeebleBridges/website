@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #fffae0;
+}
+.ti {
+  font-family: themify;
+}
+ul {
+  list-style-type: none;
+  font-size: 1.25rem;
+}
+.folderLink {
+  cursor: pointer;
+}
+.rightAngle::before {
+  content: "\25B6";
+  display: inline-block;
+  font-size: 0.7rem;
+  color: #555555;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.1s ease-in;
+}
+.ti-folder {
+  color: #2b6ef3;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+.ti-image,
+.ti-file {
+  color: #000000;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.nested {
+  padding-left: 2.5rem;
+  display: none;
+}
+.nested.active {
+  display: block;
+}
+.angleDown::before {
+  transform: rotate(90deg);
+  transition: 0.1s ease-in;
+}
+.filetree {
+  user-select: none;
+}
