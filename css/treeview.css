@@ -13,12 +13,14 @@ ul {
   font-size: 1.25rem;
 }
 .folderLink {
+  display: inline-flex;
   cursor: pointer;
+  align-items: center;
 }
 .rightAngle::before {
   content: "\25B6";
   display: inline-block;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   color: #555555;
   font-weight: bold;
   cursor: pointer;
