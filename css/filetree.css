@@ -2,60 +2,70 @@
   background: transparent;
   position: relative;
   top: 5rem;
-}
-.ti {
-  font-family: themify;
-}
-ul {
-  list-style-type: none;
-  font-size: 1.25rem;
-}
-.folderLink {
-  display: inline-flex;
-  cursor: pointer;
-  align-items: center;
-}
-.rightAngle::before {
-  content: "\25B6";
-  display: inline-block;
-  font-size: 0.75rem;
-  color: #555555;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 0.25rem;
-  transition: 0.1s ease-in;
-}
-.ti-folder {
-  color: #2b6ef3;
-  font-weight: 500;
-  font-size: 1.25rem;
-}
-.ti-image,
-.ti-file {
-  color: #000000;
-  font-weight: 500;
-  font-size: 1.1rem;
-}
-.nested {
-  padding-left: 2.5rem;
-  display: none;
-}
-.nested.active {
-  display: block;
-}
-.angleDown::before {
-  transform: rotate(90deg);
-  transition: 0.1s ease-in;
-}
-.filetree {
-  user-select: none;
-}
-.expandButton {
-  cursor: pointer;
-}
-#expandContract {
-  font-size: 0.75rem;
-  border: none;
-  background-color: transparent;
-  padding-left: 0.25rem;
+  .ti {
+    font-family: themify;
+  }
+  ul {
+    list-style-type: none;
+    font-size: 1.25rem;
+  }
+  .folderLink {
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+  }
+  .rightAngle::before {
+    content: "\25B6";
+    display: inline-block;
+    font-size: 0.75rem;
+    color: #555555;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.25rem;
+    transition: 0.1s ease-in;
+  }
+  .ti-folder {
+    color: #2b6ef3;
+    font-weight: 500;
+    font-size: 1.25rem;
+  }
+  .ti-image,
+  .ti-file {
+    color: #000000;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  .nested {
+    padding-left: 2.5rem;
+    display: none;
+  }
+  .nested.active {
+    display: block;
+  }
+  .angleDown::before {
+    transform: rotate(90deg);
+    transition: 0.1s ease-in;
+  }
+  .filetree {
+    user-select: none;
+  }
+  .expandButton {
+    cursor: pointer;
+  }
+  #expandContract {
+    font-size: 0.75rem;
+    border: none;
+    background-color: transparent;
+    padding-left: 0.25rem;
+  }
+  a:link,
+  a:visited {
+    color: #000;
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:active {
+    color: #2b6ef3;
+  }
 }
