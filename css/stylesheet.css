@@ -12,17 +12,17 @@
   right: 0rem;
   left: 30%;
   .text {
-    position: absolute;
-    top: 5rem;
+    position: inherit;
+    top: 10rem;
     right: 0rem;
     left: 50%;
     color: #0000ff;
     z-index: -1;
   }
   .headers {
-    position: absolute;
+    position: inherit;
     font-size: 3rem;
-    top: 5rem;
+    top: 10rem;
     text-align: justify;
     text-justify: inter-word;
   }
