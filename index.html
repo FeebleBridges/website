@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/themify-icons.css" />
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/treeview.css" />
+    <link rel="stylesheet" href="css/filetree.css" />
     <title>Feeblebridges</title>
   </head>
 
@@ -17,13 +17,15 @@
     <h1>Feeblebridges</h1>
     <p>Working on it lol, no rush pls</p>
     <span class="filetree">
+      <button id="expandContract">show/hide</button>
+      <p id="demo"></p>
       <ul>
         <li>
           <span class="folderLink"
-            ><span class="rightAngle"></span>
+            ><span class="rightAngle angleDown"></span>
             <span class="ti ti-folder"></span>&nbsp;Main Folder</span
           >
-          <ul class="nested">
+          <ul class="nested active">
             <li><span class="ti ti-image"></span>&nbsp;Image File</li>
             <li><span class="ti ti-file"></span>&nbsp;Document File</li>
             <li>
@@ -64,6 +66,25 @@
           this.firstElementChild.classList.toggle("angleDown");
         });
       }
+
+      // Expand/Collapse all nested folders
+      const expandContract = document.getElementById("expandContract");
+      expandContract.addEventListener("click", function () {
+        var folders = document.getElementsByClassName("nested");
+        if (!folders[0].classList.contains("active")) {
+          for (var i = 0; i < folders.length; i++) {
+            if (!folders[i].classList.contains("active")) {
+              folders[i].classList.add("active");
+            }
+          }
+        } else {
+          for (var i = 0; i < folders.length; i++) {
+            if (folders[i].classList.contains("active")) {
+              folders[i].classList.remove("active");
+            }
+          }
+        }
+      });
     </script>
   </body>
 </html>
