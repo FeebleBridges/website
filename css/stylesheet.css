@@ -42,3 +42,23 @@ h1 {
   font-weight: 900;
   text-transform: lowercase;
 }
+.center {
+  display: block;
+  margin: 0 auto;
+}
+#construction {
+  position: absolute;
+  top: 10rem;
+  right: 70%;
+  z-index: -1;
+}
+#construction3 {
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+}
+#console {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+}
