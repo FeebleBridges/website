@@ -16,7 +16,7 @@
 
   <body>
     <span class="filetree">
-      <button id="expandContract">hide/show all</button>
+      <button id="expandContract">collapse/show all</button>
       <p id="demo"></p>
       <ul>
         <li>
@@ -620,7 +620,7 @@
 
       for (var i = 0; i < toggleNode.length; i++) {
         toggleNode[i].addEventListener("click", function () {
-          this.parentElement.parentElement
+          this.parentElement
             .querySelector(".nested")
             .classList.toggle("active");
           this.firstElementChild.classList.toggle("angleDown");
@@ -631,16 +631,23 @@
       const expandContract = document.getElementById("expandContract");
       expandContract.addEventListener("click", function () {
         var folders = document.getElementsByClassName("nested");
+        var arrows = document.getElementsByClassName("rightAngle");
         if (!folders[0].classList.contains("active")) {
           for (var i = 0; i < folders.length; i++) {
             if (!folders[i].classList.contains("active")) {
               folders[i].classList.add("active");
+            }
+            if (!arrows[i].classList.contains("angleDown")) {
+              arrows[i].classList.add("angleDown");
             }
           }
         } else {
           for (var i = 0; i < folders.length; i++) {
             if (folders[i].classList.contains("active")) {
               folders[i].classList.remove("active");
+            }
+            if (arrows[i].classList.contains("angleDown")) {
+              arrows[i].classList.remove("angleDown");
             }
           }
         }
