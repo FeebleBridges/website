@@ -7,7 +7,7 @@
   font-size: 1rem;
 }
 .container {
-  position: absolute;
+  position: fixed;
   top: 5rem;
   right: 0rem;
   left: 30%;
@@ -24,7 +24,7 @@
     font-size: 3rem;
     top: 5rem;
     text-align: justify;
-    text-justify: inter-cluster;
+    text-justify: inter-word;
   }
 }
 h1 {
