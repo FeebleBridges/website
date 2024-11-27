@@ -1,9 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-body.filetree {
-  background: #ffffff;
+.filetree {
+  background: transparent;
+  position: fixed;
+  top: 5rem;
 }
 .ti {
   font-family: themify;
@@ -58,6 +56,6 @@ ul {
 #expandContract {
   font-size: 0.75rem;
   border: none;
-  background-color: #ffffff;
+  background-color: transparent;
   padding-left: 0.25rem;
 }
